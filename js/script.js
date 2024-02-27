@@ -40,6 +40,18 @@ createApp({
         removeQuest(index){
             this.quests.splice(index, 1);
             // do questa funzione al click sulla x
+        },
+
+        // Creo una funzione che aggiunga una quest alla lista sopra
+        addQuest(){
+            // Verifico che il testo dell'input non sia vuoto o
+            // composto da soli spazi utilizzando il trim()
+            if(this.newQuestText.trim() != ''){
+                this.quests.push({
+                    text: this.newQuestText,
+                    done: false,
+                });
+            }
         }
         
     },
