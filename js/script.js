@@ -44,13 +44,19 @@ createApp({
 
         // Creo una funzione che aggiunga una quest alla lista sopra
         addQuest(){
+            
             // Verifico che il testo dell'input non sia vuoto o
             // composto da soli spazi utilizzando il trim()
             if(this.newQuestText.trim() != ''){
                 this.quests.push({
                     text: this.newQuestText,
                     done: false,
+                    // Dopodichè assegno la funzione al click del button
                 });
+
+                // Resetto il contenuto dell'input per non doverlo
+                // far cancellare manualmente all'utente
+                this.newQuestText = "";
             }
         }
         
