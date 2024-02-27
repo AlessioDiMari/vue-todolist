@@ -1,11 +1,11 @@
-const createApp = Vue;
+const {createApp} = Vue;
 
 createApp({
     data(){
         return {
 
             // Array di quest da fare per affrontare il boss del livello
-            quest: [
+            quests: [
                 {
                     text: "Migliorare l'arma che vuoi utilizzare",
                     done: false
@@ -26,8 +26,9 @@ createApp({
 
         }
     },
+
     // Funzioni che utilizzerò nel codice
     methods: {
         
     },
-}).mount("#app")
+}).mount("#app");
