@@ -4,6 +4,7 @@ createApp({
     data(){
         return {
 
+            // Array di quest da fare per affrontare il boss del livello
             quest: [
                 {
                     text: "Migliorare l'arma che vuoi utilizzare",
@@ -25,6 +26,7 @@ createApp({
 
         }
     },
+    // Funzioni che utilizzerò nel codice
     methods: {
         
     },
