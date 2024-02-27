@@ -33,6 +33,14 @@ createApp({
 
     // Funzioni che utilizzerò nel codice
     methods: {
+
+        // Creo un metodo che rimuoverà la quest al click sulla x
+        // do come parametro alla funzione l'indice dell'oggetto
+        // da eliminare dall'array
+        removeQuest(index){
+            this.quests.splice(index, 1);
+            // do questa funzione al click sulla x
+        }
         
     },
 }).mount("#app");
