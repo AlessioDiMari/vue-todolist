@@ -62,3 +62,8 @@ createApp({
         
     },
 }).mount("#app");
+
+
+
+// Correggo il fatto che non riuschisse a cancellare effettivamente
+// quello che volevo perché non avevo dato il parametro index al v-for
