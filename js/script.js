@@ -58,7 +58,16 @@ createApp({
                 // far cancellare manualmente all'utente
                 this.newQuestText = "";
             }
-        }
+        },
+
+        // Bonus 2
+        // Freo una funzione che al click del testo della quest
+        // inverta lo stato done
+        toggleStatus(index){
+            this.quests[index].done = !this.quests[index].done;
+            // Dopodiché aggiungo un event listener @click a "text-quest"
+            // che richiama questa funzione
+        },
         
     },
 }).mount("#app");
