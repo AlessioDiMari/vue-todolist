@@ -45,6 +45,7 @@
                 aria-label="Recipient's username" 
                 aria-describedby="button-addon2" 
                 v-model="newQuestText"
+                @keyup.enter="addQuest"
                 >
                 <button class="btn btn-outline-primary" 
                 type="button" 

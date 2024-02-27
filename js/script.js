@@ -65,5 +65,12 @@ createApp({
 
 
 
+/***************** 
+    BONUS 1
+******************/
+// aggiungo un attributo "@keyup.enter" all'input
+// che richiama la funzione assQuest al click del tasto enter
+
+
 // Correggo il fatto che non riuschisse a cancellare effettivamente
 // quello che volevo perché non avevo dato il parametro index al v-for
