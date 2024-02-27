@@ -12,11 +12,15 @@ createApp({
                 },
                 {
                     text: "Migliorare l'armatura che vuoi utilizzare",
-                    done: false
+                    done: true
                 },
                 {
                     text: "Craftare o comprare 4/5 pozioni di cura",
                     done: false
+                },
+                {
+                    text: "Craftare arco e frecce",
+                    done: true
                 },
                 {
                     text: "Affronta il boss",

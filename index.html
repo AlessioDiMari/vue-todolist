@@ -17,8 +17,9 @@
         <div class="container">
             <h1>Boss todo list</h1>
             <ul  class="list-group pt-5">
-                <li v-for="undoneQuest in quests" class="list-group-item list-group-item-action d-flex justify-content-between align-items-center">
-                    <div class="text-quest"> {{undoneQuest.text}} </div>
+                <li v-for="quest in quests" 
+                class="list-group-item list-group-item-action d-flex justify-content-between align-items-center">
+                    <div :class=" quest.done == true ? 'text-decoration-line-through' : '' " class="text-quest"> {{quest.text}} </div>
                     <i class="fa-solid fa-square-xmark" style="color: #ff0000;"></i>
                 </li>
             </ul>
